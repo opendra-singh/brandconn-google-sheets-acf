@@ -1,163 +1,161 @@
-<style>
-    /**
+/**
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
-    @media (min-width: 992px) {
-        .container .img-two {
-            right: 20% !important;
-        }
+@media (min-width: 992px) {
+    .container1 .img-two {
+        right: 20% !important;
     }
+}
 
-    @media (min-width: 768px) {
-        .container .img-two {
-            right: 8% !important;
-        }
+@media (min-width: 768px) {
+    .container1 .img-two {
+        right: 8% !important;
     }
+}
 
-    @media (min-width: 576px) {
-        .container .img-two {
-            right: 4% !important;
-        }
+@media (min-width: 576px) {
+    .container1 .img-two {
+        right: 4% !important;
     }
+}
 
-    .container {
-        padding: 30px;
-        min-height: 90vh;
-    }
+.container1 {
+    padding: 30px;
+    min-height: 90vh;
+}
 
-    .form {
-        filter: drop-shadow(0px 0px 29px rgba(0, 0, 0, 0.156));
-        border-radius: 10px;
-        width: 90%;
-        min-height: 85%;
-        margin: auto;
-        padding: 20px 20px 110px 20px;
-    }
+.form {
+    filter: drop-shadow(0px 0px 29px rgba(0, 0, 0, 0.156));
+    border-radius: 10px;
+    width: 90%;
+    min-height: 85%;
+    margin: auto;
+    padding: 20px 20px 110px 20px;
+}
 
-    .form img {
-        width: 90px;
-        padding: 5px 0 10px 0;
-    }
+.form img {
+    width: 90px;
+    padding: 5px 0 10px 0;
+}
 
-    .form .img-right {
-        padding: 0;
-        position: absolute;
-        top: 0;
-        right: 0
-    }
+.form .img-right {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0
+}
 
-    .form .img-one {
-        padding: 0;
-        position: absolute;
-        top: 40px;
-        right: -10px;
-        width: 40px;
-        z-index: 0;
-    }
+.form .img-one {
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    width: 40px;
+    z-index: 0;
+}
 
-    .container .img-two {
-        padding: 0;
-        position: absolute;
-        top: 130px;
-        right: 10px;
-        width: 40px;
-        z-index: 0;
-    }
+.container1 .img-two {
+    padding: 0;
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    width: 40px;
+    z-index: 0;
+}
 
-    .acf-form-submit-btn input {
-        background-color: #333333 !important;
-        color: #EEEEEE !important;
-        margin-top: 20px;
-    }
+.acf-form-submit-btn input {
+    background-color: #333333 !important;
+    color: #EEEEEE !important;
+    margin-top: 20px;
+}
 
-    .acf-form-submit-btn input:disabled {
-        background-color: #959595 !important;
-    }
+.acf-form-submit-btn input:disabled {
+    background-color: #959595 !important;
+}
 
-    .form label {
-        color: 999999;
-        font-size: 12px;
-    }
+.form label {
+    color: 999999;
+    font-size: 12px;
+}
 
-    .acf-label {
-        margin: 5px auto;
-    }
+.acf-label {
+    margin: 5px auto;
+}
 
-    .form input,
-    .form textarea,
-    .form select {
-        padding: 5px;
-        background: #EEEEEE;
-        width: 100%;
-        border: none;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
+.form input,
+.form textarea,
+.form select {
+    padding: 5px;
+    background: #EEEEEE;
+    width: 100%;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
-    .acf-required,
-    .acf-form-submit {
-        display: none;
-    }
+.acf-required,
+.acf-form-submit {
+    display: none;
+}
 
-    .dropdown {
-        display: inline-block;
-        position: relative;
-    }
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 100%;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-        background-color: azure;
-        border-radius: 10px;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    background-color: azure;
+    border-radius: 10px;
+}
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    .dropdown-content a {
-        display: block;
-        color: #000000;
-        padding: 5px;
-        text-decoration: none;
-    }
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
 
-    .dropdown-content a:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-    }
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
 
-    .button-17 {
-        align-items: center;
-        border-radius: 10px;
-        border-style: none;
-        color: #3c4043;
-        cursor: pointer;
-        display: inline-flex;
-        font-size: 14px;
-        height: 48px;
-        justify-content: center;
-        padding: 2px 24px;
-        z-index: 0;
-    }
+.button-17 {
+    align-items: center;
+    border-radius: 10px;
+    border-style: none;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    height: 48px;
+    justify-content: center;
+    padding: 2px 24px;
+    z-index: 0;
+}
 
-    .button-17:hover {
-        background: #F6F9FE;
-        color: #174ea6;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+.button-17:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-    .dynamic-form {
-        margin-bottom: 16px;
-    }
+.dynamic-form {
+    margin-bottom: 16px;
+}
 
-    .temp input {
-        width: 45%;
-        margin: 5px;
-    }
-</style>
+.temp input {
+    width: 45%;
+    margin: 5px;
+}

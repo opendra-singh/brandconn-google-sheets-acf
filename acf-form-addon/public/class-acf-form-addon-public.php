@@ -113,7 +113,7 @@ class Acf_Form_Addon_Public
 	{
 		ob_start() ?>
 		<style>
-			.container {
+			.container1 {
 				background-image: url("<?= plugin_dir_url(__FILE__) . '/assets/Asset 3.png' ?>"), url("<?= plugin_dir_url(__FILE__) . '/assets/Asset 4.png' ?>");
 				background-position: right bottom, left bottom;
 				background-repeat: no-repeat, no-repeat;
@@ -132,7 +132,7 @@ class Acf_Form_Addon_Public
 		<link rel="stylesheet" href="<?= plugin_dir_url(__FILE__) . 'css/custom.css' ?>">
 		<div id="primary">
 			<div id="content" role="main">
-				<div class="container">
+				<div class="container1">
 					<img class="img-two" src="<?= plugin_dir_url(__FILE__) . 'assets/RED-SHAPE.png' ?>" alt="">
 					<div class="form">
 						<img src="https://okmg-web-assets-rc.s3.ap-southeast-2.amazonaws.com/okmg-master.svg" alt="">
