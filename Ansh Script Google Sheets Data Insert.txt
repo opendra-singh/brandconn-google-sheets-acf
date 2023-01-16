@@ -1,0 +1,41 @@
+var wbook = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CuOrkhmLgtLFK7knk1RHM59A1oGvFiOr0rwI-2MqDRw/edit#gid=0')
+var sheet = wbook.getSheetByName('Sheet1')
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup() {
+  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost(e) {
+  var action = e.parameter.action;
+  if (action == 'addUser') {
+    return addUser(e);
+  }
+}
+
+function addUser(e) {
+  try {
+  var d = JSON.parse(e.postData.contents);
+  const sheet = SpreadsheetApp.getActiveSheet();
+  var lastColumn = sheet.getLastColumn();
+  var lastRow = sheet.getLastRow();
+  sheet.appendRow(d.d)
+  for (let i = 0; i < d.h.length; i++) {
+    sheet.getRange(1, sheet.getLastColumn() + 1).setValue(d.h[i]);
+  }
+  for (let i = 0; i < d.v.length; i++) {
+    sheet.getRange(lastRow+1, lastColumn + 1).setValue(d.v[i]);
+    lastColumn++;
+  }
+
+  return ContentService
+  .createTextOutput(JSON.stringify({"result":"success","message":"success"}))
+  .setMimeType(ContentService.MimeType.JSON)
+  }
+    catch (e) {
+    return ContentService
+      .createTextOutput(JSON.stringify({"result":"error","message" : e}))
+      .setMimeType(ContentService.MimeType.JSON)
+    }
+}
