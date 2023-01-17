@@ -1,6 +1,6 @@
 # STEPS needs to follow to make plugin work
 
-1) Installing plugin, (available in "acf-form-addon" folder).
+1) Install the plugin, (available in "acf-form-addon" folder).
 2) Activate the plugin.
 3) Import json in ACF for fields (available as 'acf-export-2023-01-16.json').
 4) Now open a google sheet and add the script (available as Ansh Script Google Sheets Data Insert.txt) there.
